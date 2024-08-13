@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 800;
+    font-style: normal
+  }
+  
+  header, footer {
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+
+
+ /* Custom Navbar Styles */
+.navbar-custom {
+  /* background-image: url('/src/assets/headerbackground.png'); /* Replace with your image path
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; * */
+  width: 300%; /* Making it three times as wide */
+  transform: scale(0.33); /* Scale it down to fit within the normal viewport width */
+  transform-origin: left center; /* Ensure scaling happens from the left edge */
+}
+
+.navbar-custom .container-fluid {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Adjust the text size */
+.navbar-custom .navbar-brand{
+  font-size: 8.5rem; /* Increase the font size */
+  color: #fff; /* Adjust text color for better visibility against the background image */
+  margin: 0;
+  color: #333;
+  background-color: #edec00;
+  border-radius: 7px;
+  padding: 3px 20px 3px 20px;
+  box-shadow: 0 30px 25px 0 #000000, 0 6px 20px 0 rgba(0, 0, 0, 0.90);
+}
+
+
+
+.navbar-custom .nav-link {
+  font-size: 3.5rem; /* Increase the font size */
+  color: #fff; /* Adjust text color for better visibility against the background image */
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,...'); /* Optionally, customize the toggler icon color */
+}
+
+/* Ensure that the content below the navbar is not affected by the transformation */
+.header-wrapper {
+  background-image: url('/src/assets/headerbackground.png'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: 100vw; /* This constrains the header width to the viewport width */
+}
